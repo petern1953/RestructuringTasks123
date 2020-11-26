@@ -3,8 +3,8 @@
 //     firstName: 'John',
 //     lastName: 'Doe'
 // };
-// Mentsd el külön lastName, firstName, és job változókba a fenti objektum property-jeit!
-// Ha valamelyik nincs megadva, akkor az érték legyen a “unknown” string!
+// Mentsd el külön l, f és j változókba a fenti objektum lastName, firstName és job property-jeit!
+// Ha valamelyik nincs megadva, akkor az érték legyen az “unknown” string!
 
 'use strict';
 
@@ -13,6 +13,6 @@ const user = {
     lastName: 'Doe'
 };
 
-const { lastName, firstName, job = 'unknown' } = user;
+const { lastName: l = 'unknown', firstName: f = 'unknown', job: j = 'unknown' } = user;
 
-console.log(firstName, lastName, job);
+console.log(l, f, j);
